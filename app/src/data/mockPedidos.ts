@@ -13,23 +13,33 @@ export interface ItemPedido {
 export const mockPedidos: ItemPedido[] = [
   {
     id: '1',
-    codigo: '12345',
+    codigo: 'S-100',
     descricao: 'Soro Fisiológico 0.9% 500ml',
-    qtdSolicitada: 10,
+    qtdSolicitada: 12,
     unidade: 'Frasco',
     lotesSistema: [
-      { lote: 'LOT123', qtd: 6 },
-      { lote: 'LOT456', qtd: 4 },
+      { lote: 'L2026-01', qtd: 8 },
+      { lote: 'L2026-02', qtd: 4 },
     ],
   },
   {
     id: '2',
-    codigo: '67890',
+    codigo: 'D-200',
     descricao: 'Dipirona Sódica 500mg/ml',
     qtdSolicitada: 5,
     unidade: 'Ampola',
     lotesSistema: [
-      { lote: 'LOT789', qtd: 5 },
+      { lote: 'L2026-03', qtd: 5 },
+    ],
+  },
+  {
+    id: '3',
+    codigo: 'O-300',
+    descricao: 'Oxigênio Medicinal (Cilindro)',
+    qtdSolicitada: 2,
+    unidade: 'Unid',
+    lotesSistema: [
+      { lote: 'OX-99', qtd: 2 },
     ],
   },
 ];
