@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,9 +11,11 @@ export default function Home() {
         </p>
         
         <div className="grid grid-cols-1 gap-4">
-          <button className="w-full py-4 px-6 bg-blue-600 text-white rounded-2xl font-semibold text-lg shadow-md active:scale-95 transition-transform">
-            📦 Iniciar Separação
-          </button>
+          <Link href="/separacao">
+            <button className="w-full py-4 px-6 bg-blue-600 text-white rounded-2xl font-semibold text-lg shadow-md active:scale-95 transition-transform">
+              📦 Iniciar Separação
+            </button>
+          </Link>
           <button className="w-full py-4 px-6 bg-white text-blue-600 border-2 border-blue-600 rounded-2xl font-semibold text-lg active:scale-95 transition-transform">
             ✅ Realizar Conferência
           </button>
